@@ -1,7 +1,6 @@
 {
-  "name": "aternos-bot",
+  "name": "aternos",
   "version": "1.0.0",
-  "description": "Discord Minecraft AI Bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
