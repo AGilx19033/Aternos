@@ -1,19 +1,17 @@
 {
-  "name": "aternosbot",
+  "name": "aternos-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Discord Minecraft AI Bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "canvas": "^3.2.3",
-    "discord.js": "^14.27.0",
-    "mineflayer": "^4.39.0",
-    "prismarine-viewer": "^1.33.0"
+    "@google/genai": "^0.1.1",
+    "discord.js": "^14.14.0",
+    "mineflayer": "^4.20.0",
+    "mineflayer-data": "^3.18.0",
+    "mineflayer-pathfinder": "^2.4.3",
+    "minecraft-data": "^3.152.0"
   }
 }
