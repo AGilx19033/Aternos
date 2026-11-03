@@ -23,8 +23,6 @@ const client = new Client({
     ]
 });
 
-// Railway Variables kısmındaki DISCORD_TOKEN ile uyumlu hale getirildi
-const TOKEN = process.env.DISCORD_TOKEN;
 const ai = new GoogleGenAI(); 
 
 const ALLOWED_USERS = [
@@ -160,10 +158,10 @@ function connectMinecraft(channel) {
 
     try {
         bot = mineflayer.createBot({
-            host: 'Agil-Ycea.aternos.me', // Güncellenen IP adresi
-            port: 32076,                  // Güncellenen Port numarası
+            host: 'Agil-Ycea.aternos.me',
+            port: 32076,
             username: 'AternosBot',
-            version: '1.21',              // Fabric / 1.21 uyumlu sürüm
+            version: '1.21',
             auth: 'offline'
         });
 
@@ -374,4 +372,5 @@ function cleanupBot() {
     }
 }
 
-client.login(TOKEN);
+// Token hatasını önlemek için doğrudan Railway değişkeni buraya bağlandı
+client.login(process.env.DISCORD_TOKEN);
