@@ -10,7 +10,7 @@ const client = new Client({
     ]
 });
 
-const TOKEN = 'MTU1MTY2NTA2ODI0MzAzNDIyMg.GYB7KA.Amd8EfF9Xj7W5xc1PTOM5diu0y8MFSASaN8A10';
+
 
 let bot = null;
 let movementInterval = null;
@@ -32,10 +32,10 @@ client.on('messageCreate', async (message) => {
 
         try {
             bot = mineflayer.createBot({
-                host: '202.92.21.217',
-                port: 25565, // Aternos'tan aldığın port numaranı buraya yaz
-                username: 'sssagil',
-                version: '1.20.4',
+                host: 'Agil-Ycea.aternos.me:',
+                port: 32076, // Aternos'tan aldığın port numaranı buraya yaz
+                username: 'rovshenlenkeranski',
+                version: '1.21.11',
                 auth: 'offline'
             });
 
